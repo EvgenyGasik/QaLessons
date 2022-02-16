@@ -5,7 +5,7 @@ public class HomeWorkApp {
     public static void main(String[] args) {
         printThreeWords("Orange", "Banana", "Apple");
         System.out.println();
-        checkSumSign(-10,6);
+        checkSumSign(-12,6);
         System.out.println();
         printColor(101);
         System.out.println();
