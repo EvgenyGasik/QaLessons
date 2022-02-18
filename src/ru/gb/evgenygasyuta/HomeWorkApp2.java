@@ -9,7 +9,7 @@ public class HomeWorkApp2 {
         System.out.println("Задание 3 ");
         System.out.println(negativeOrNotV2(6));
         System.out.println("Задание 4");
-        printLine("Hello", 5);
+        printLine("hello", 5);
         System.out.println("Задание 5 ");
         System.out.println(checkYear(2021));
 
@@ -25,8 +25,9 @@ public class HomeWorkApp2 {
 
 
     public static void printLine(String text, int a) {
-        for (int i = 0; i == a ; i++) {
-            System.out.println(i);
+        for (int i = 0; i < a; i++) {
+            System.out.println(text);
+
         }
         }
 
