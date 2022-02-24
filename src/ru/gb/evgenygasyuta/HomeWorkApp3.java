@@ -28,6 +28,12 @@ public class HomeWorkApp3 {
     }
 
     private static void maxMinArr() {
+        int[] arr = {0,2,6,8,7,5};
+        for (int i = 0; i < arr.length; i++) {
+            int min = 0;
+            
+        }
+
     }
 
     private static void makeArr() {
