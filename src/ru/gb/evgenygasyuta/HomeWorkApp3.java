@@ -28,12 +28,16 @@ public class HomeWorkApp3 {
     }
 
     private static void maxMinArr() {
-        int[] arr = {0,2,6,8,7,5};
+        int[] arr = {10, 2, 6, 8, 17, 5};
+        int min = arr[0];
+        int max = arr [0];
         for (int i = 0; i < arr.length; i++) {
-            int min = 0;
-            
+            if (arr[i] < min) min = arr[i];
+            if (arr[i] > max) max = arr[i];
         }
 
+        System.out.println("Min = " + min);
+        System.out.println("Max = " + max);
     }
 
     private static void makeArr() {
@@ -48,8 +52,15 @@ public class HomeWorkApp3 {
 
     private static void diagonalArr() {
         int[][] arr = new int[4][4];
-
-
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+              if (i == j){
+                  arr[i][j] = 1;
+              } else arr[i][j] = 0;
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println(" ");
+        }
         }
 
 
