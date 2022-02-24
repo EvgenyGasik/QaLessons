@@ -1,5 +1,7 @@
 package ru.gb.evgenygasyuta;
 
+import java.sql.SQLOutput;
+
 public class HomeWorkApp3 {
     public static void main(String[] args) {
         System.out.println("Задание 1 ");
@@ -13,15 +15,37 @@ public class HomeWorkApp3 {
         System.out.println();
         System.out.println("Задание 4");
         diagonalArr();
+        System.out.println();
+        System.out.println("Задание 5");
+        makeArr();
+        System.out.println();
+        System.out.println("Задание 6");
+        maxMinArr();
 
 
 
 
+    }
+
+    private static void maxMinArr() {
+    }
+
+    private static void makeArr() {
+        int len = 7;
+        int intValue = 77;
+        int[] arr = new int[len];
+        for (int i = 0; i < len; i++) {
+            arr[i] = intValue;
+            System.out.print(arr[i] + " ");
+        }
     }
 
     private static void diagonalArr() {
-        int[][] arr = new int[][];
-    }
+        int[][] arr = new int[4][4];
+
+
+        }
+
 
     private static void arrX2() {
         int[] arr = {22, 6, 3, 2, 11, 4, 5, 4, 8, 9, 1};
