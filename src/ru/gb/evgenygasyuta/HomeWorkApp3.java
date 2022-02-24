@@ -7,7 +7,22 @@ public class HomeWorkApp3 {
         System.out.println();
         System.out.println("Задание 2");
         createArr();
+        System.out.println();
+        System.out.println("Задание 3");
+        arrX2();
+        System.out.println();
+        System.out.println("Задание 4");
 
+
+
+
+    }
+
+    private static void arrX2() {
+        int[] arr = {1, 5, 3, 2, 11, 4, 5, 4, 8, 9, 1};
+        for (int i = 0; i < arr.length; i++) {
+
+        }
     }
 
     private static void createArr() {
