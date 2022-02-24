@@ -12,16 +12,25 @@ public class HomeWorkApp3 {
         arrX2();
         System.out.println();
         System.out.println("Задание 4");
+        diagonalArr();
 
 
 
 
     }
 
-    private static void arrX2() {
-        int[] arr = {1, 5, 3, 2, 11, 4, 5, 4, 8, 9, 1};
-        for (int i = 0; i < arr.length; i++) {
+    private static void diagonalArr() {
+        int[][] arr = new int[][];
+    }
 
+    private static void arrX2() {
+        int[] arr = {22, 6, 3, 2, 11, 4, 5, 4, 8, 9, 1};
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < 6){
+                arr[i]=arr[i]*2;
+            }else arr[i]=arr[i];
+            System.out.print(arr[i] + " ");
         }
     }
 
@@ -29,7 +38,7 @@ public class HomeWorkApp3 {
         int[] arr = new int[100];
         for (int i = 0; i < arr.length; i++) {
             arr[i]=i+1;
-            System.out.print(arr[i]);
+            System.out.print(arr[i] + " ");
 
         }
     }
@@ -40,7 +49,7 @@ public class HomeWorkApp3 {
             if (arr[i] == 1) {
                 arr[i] = 0;
             } else arr[i] = 1;
-            System.out.print(arr[i]);
+            System.out.print(arr[i] + " " );
         }
     }
 }
