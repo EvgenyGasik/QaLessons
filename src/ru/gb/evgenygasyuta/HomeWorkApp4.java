@@ -30,7 +30,8 @@ public class HomeWorkApp4 {
 
     }
     public static boolean isWinner(String mark, String[][] map){
-        if(
+        // продумать логику победы с циклом
+        /*if(
                 (map[0][0].equals(mark) && map[0][1].equals(mark) && map[0][2].equals(mark))
                         || (map[1][0].equals(mark) && map[1][1].equals(mark) && map[1][2].equals(mark))
                         || (map[2][0].equals(mark) && map[2][1].equals(mark) && map[2][2].equals(mark))
@@ -57,7 +58,7 @@ public class HomeWorkApp4 {
         }
         else {
             return false;
-        }
+        }*/
     }
     public static boolean ifBothLose(String[][] map){
         for (int i = 0; i < map.length; i++) {
