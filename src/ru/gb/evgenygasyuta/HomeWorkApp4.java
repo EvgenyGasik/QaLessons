@@ -29,8 +29,41 @@ public class HomeWorkApp4 {
 
 
     }
-    public static boolean isWinner(String mark, String[][] map){
+    public static boolean isWinner(String mark, String[][] map) {
         // продумать логику победы с циклом
+        int X;
+        int y;
+        // Проверка строк на выигрыш
+        for (X = 0; X < map.length; X++) {
+            for (y = 0; y < map[0].length; y++) {
+                if (map[y][X] == mark && map[y][X] == mark) {
+                    System.out.println("test");
+                    return true;
+                }
+            }
+        }
+        // Проверка стобцов на выигрыш
+        for (X = 0; X < map.length; X++) {
+            for (y = 0; y < map[0].length; y++) {
+                if (map[ X][y] == mark && map[X][y] == mark) {
+                    return true;
+                }
+            }
+        }
+        // Проверка диагоналей (первые и вторые)
+        for (X = 0; X < map.length; X++) {
+            for (y = 0; y < map[0].length; y++) {
+                if (map[X][y] == mark && map[X][y] == mark) {
+                    return true;
+                }
+
+                if (map[X][y] == mark && map[X][y] == mark) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
         /*if(
                 (map[0][0].equals(mark) && map[0][1].equals(mark) && map[0][2].equals(mark))
                         || (map[1][0].equals(mark) && map[1][1].equals(mark) && map[1][2].equals(mark))
@@ -59,7 +92,6 @@ public class HomeWorkApp4 {
         else {
             return false;
         }*/
-    }
     public static boolean ifBothLose(String[][] map){
         for (int i = 0; i < map.length; i++) {
             for (int j = 0; j < map.length; j++) {
@@ -128,7 +160,7 @@ public class HomeWorkApp4 {
 
     }
     public static String[][] initField(int size){
-        String[][] map =new String[size][size];
+        String[][] map = new String[size][size];
         for (int i = 0; i < map.length; i++) {
             for (int j = 0; j < map[0].length; j++) {
                 map[i][j] = "*";
