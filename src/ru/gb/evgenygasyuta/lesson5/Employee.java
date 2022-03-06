@@ -16,7 +16,7 @@ public class Employee {
         this.salary = salary;
     }
     public void inf(){
-        System.out.println("Сотрудник :" + name + "\nДолжность :" + position + "\nВозраст :" + age);
+        System.out.println("Сотрудник :" + name + "\nДолжность :" + position + "\nТелефон :" + phone + "\nВозраст :" + age);
     }
 
     public int getAge(){
