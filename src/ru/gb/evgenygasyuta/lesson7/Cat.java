@@ -11,8 +11,16 @@ public class Cat {
         this.appetit = appetit;
         countOfCat++;
     }
+    public boolean isFull(){
+        return fullOrNot;
+    }
     public void toEat(Plate plate){
-        plate.setFood(plate.getFood() - appetit);
+        if (plate.decreaseFood(appetit)){
+            System.out.println(name + " is to eat");
+            fullOrNot = true;
+        }else {
+            System.out.println(name + " is Not eat");
+        }
     }
 
     public String getName(){

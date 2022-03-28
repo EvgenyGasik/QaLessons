@@ -2,14 +2,24 @@ package ru.gb.evgenygasyuta.lesson7;
 
 public class HomeworkApp7 {
     public static void main(String[] args) {
-        Cat cat1 = new Cat("tom", 40);
-        Cat cat2 = new Cat("Barsik",60);
+        Plate plate = new Plate(45);
 
-        Plate plate = new Plate(150);
+        Cat[] cats = new Cat[]{
+          new Cat("Tom", 15),
+          new Cat("Kitty", 20),
+          new Cat("Sweety", 45)
+        };
+        for(Cat cat:cats){
+            cat.toEat(plate);
+            if (cat.isFull()){
+                System.out.println(cat.getName() + " is full");
 
-        cat1.toEat(plate);
-        cat2.toEat(plate);
-        System.out.println(plate.getFood());
+            } else {
+                System.out.println(cat.getName() + " is Not full");
+            }
+        }
+        plate.addFood(20);
+
 
     }
 }
